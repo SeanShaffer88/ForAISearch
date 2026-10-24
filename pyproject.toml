@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forai-search"
+version = "0.1.0"
+description = "Local offline FTS5 search CLI over the ForAI developer-resources catalog (stdlib only)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sean Shaffer" }]
+keywords = ["forai", "search", "fts5", "sqlite", "cli", "offline"]
+
+[project.scripts]
+forai-search = "forai_search:main"
+
+[tool.setuptools]
+py-modules = ["forai_search"]
